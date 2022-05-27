@@ -1,7 +1,7 @@
 describe('Login de usuarios alura pic', () => {
 
     beforeEach(() => {
-        cy.visit('https://alura-fotos.herokuapp.com')
+        cy.visit('/')
         })
 
         it('Login de usuario valido', () => {
@@ -9,7 +9,7 @@ describe('Login de usuarios alura pic', () => {
         cy.contains('a', '(Logout)').should('be.visible');   
         })
 
-        it.only('Login de usuario invalido', () => {
+        it('Login de usuario invalido', () => {
             cy.login('diego','1234');
             cy.on ('window:alert', (str) => {
                 expect(str).to.equal("Invalid user name or password")

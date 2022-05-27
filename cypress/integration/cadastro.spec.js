@@ -4,7 +4,7 @@ describe('Cadastro de usuarios alura pic', () => {
         cy.visit('/')
     })
 
-    it('verifica mensagens de email invalido', () => {
+    it('Verifica mensagens de email invalido', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
         cy.get('input[formcontrolname="email"]').type('jacqueline');
@@ -12,7 +12,7 @@ describe('Cadastro de usuarios alura pic', () => {
      
     })
 
-    it('verifica mensagens validacao', () => {
+    it('Verifica mensagens validacao', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
         cy.contains('ap-vmessage', 'Email is required!').should('be.visible');
@@ -22,7 +22,7 @@ describe('Cadastro de usuarios alura pic', () => {
         cy.contains('ap-vmessage', 'Full name is required!').should('be.visible');
     })
 
-    it('verifica mensagens de senha com menos de 8 caracteres', () => {
+    it('Verifica mensagens de senha com menos de 8 caracteres', () => {
         cy.contains('a', 'Register now').click();
         cy.contains('button', 'Register').click();
         cy.get('input[formcontrolname="password"]').type('123');
@@ -31,10 +31,10 @@ describe('Cadastro de usuarios alura pic', () => {
      
     })
 
-    const usuarios = require('../../fixtures/usuarios.json');
+    const usuarios = require('../fixtures/usuarios.json');
     usuarios.forEach(usuario => {
 
-        it(`registra novo usuário ${usuario.userName} `, () => {
+        it(`Registra novo usuário ${usuario.userName} `, () => {
             cy.contains('a', 'Register now').click();
             cy.contains('button', 'Register').click();
             cy.get('input[formcontrolname="email"]').type(usuario.email);
