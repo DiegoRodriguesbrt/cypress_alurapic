@@ -1,0 +1,23 @@
+{
+  "name": "cypress_alurapic",
+  "version": "1.0.0",
+  "description": "Formação de Quality Assurance (QA) disponibilizada como trilha na plataforam Alura. Percebi a real importância de um bom e definido plano de teste, das estratégias e tipos de testes. Conceitos como BDD, TDD, DDD, pirâmide de teste, metodologia ágil e cascata, como funciona e é composta uma equipe ágil, as diferenças entre o modelo cascata e o ágil. Por fim, utilizei o Cypress, que utiliza a linguagem JavaScript, para montar cenários de testes automatizados E2E (end-to-end) que possui várias ferramentas de visualização gráfica e relatórios com métricas dos testes realizados.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoRodriguesbrt/cypress_alurapic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoRodriguesbrt/cypress_alurapic/issues"
+  },
+  "homepage": "https://github.com/DiegoRodriguesbrt/cypress_alurapic#readme",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
